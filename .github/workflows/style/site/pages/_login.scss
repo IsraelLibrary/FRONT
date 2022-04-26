@@ -1,0 +1,136 @@
+.login-modal {
+  max-width: 540px;
+  .create {
+    margin-bottom: 54px;
+  }
+  .main-container {
+    text-align: center;
+    padding: 0 20px;
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      border: 2px solid $primary;
+      border-radius: 4px;
+      height: 50px;
+      padding: 0 16px;
+      &:focus-visible {
+        border: 1px solid $primary;
+        outline: 0;
+      }
+      &::placeholder {
+        color: $primary;
+      }
+      &.valid {
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-color: palevioletred;
+          position: absolute;
+        }
+      }
+    }
+    .email {
+      width: 329px;
+    }
+    .btn-login {
+      width: 103px;
+      height: 50px;
+    }
+    .divider {
+      margin-top: 1em;
+      position: relative;
+      z-index: 1;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        //  left: 0;
+        background-color: $primary;
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 40%;
+        content: "\a0";
+      }
+      &::after {
+        right: -2px;
+      }
+      &::before {
+        margin-left: -50%;
+        text-align: right; 
+      }
+      h2 {
+        color: #444;
+        font-size: 18px;
+      }
+    }
+    .fb-btn {
+      background-image: url("/assets/img/login/facebook.svg");
+      background-repeat: no-repeat;
+      background-position: 98%;
+      width: 444px;
+      height: 56px;
+      border: 2px solid $primary;
+      border-radius: 0;
+      color: $primary;
+      font-family: "assistant-semi-bold", sans-serif;
+    }
+    .google-btn {
+      background-image: url("/assets/img/login/Google_Icons-09-512.webp");
+      background-repeat: no-repeat;
+      background-position: 101%;
+      margin-top: 1em;
+      background-size: contain;
+      width: 444px;
+      height: 56px;
+      border: 2px solid $primary;
+      border-radius: 0;
+      color: $primary;
+      font-family: "assistant-semi-bold", sans-serif;
+    }
+    .buttons {
+      button {
+        color: $white;
+        background-color: $primary;
+        border-color: $primary;
+        border: none;
+        font-size: 19px;
+        width: 444px;
+        height: 60px;
+        margin-top: 30px;
+      }
+    }
+    .localAccount {
+      .entry {
+        .entry-item {
+          .error {
+            text-align: left;
+            color: $danger;
+          }
+          .forgot-password {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.heading {
+  h1 {
+    font-family: "Assistant-Bold", sans-serif;
+    font-size: 28px;
+  }
+}
+
+.text-feild {
+  width: 444px;
+  margin-top: 15px;
+
+  &::placeholder {
+    color: $primary;
+  }
+}
