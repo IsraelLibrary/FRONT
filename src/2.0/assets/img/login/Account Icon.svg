@@ -1,0 +1,6 @@
+<svg id="Account_Icon" data-name="Account Icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="account_icon-2" data-name="account icon">
+    <rect id="Icon-Frame" width="32" height="32" fill="#043055"/>
+    <path id="account_icon-3" data-name="account icon" d="M83,59.36a9.4,9.4,0,0,1-7.8-4.16c.039-2.6,5.2-4.03,7.8-4.03s7.761,1.43,7.8,4.03A9.4,9.4,0,0,1,83,59.36ZM83,40.9a3.9,3.9,0,1,1-2.758,1.143A3.9,3.9,0,0,1,83,40.9ZM83,37A13,13,0,1,0,96,50,13,13,0,0,0,83,37Z" transform="translate(-66.998 -33.999)" fill="#fff"/>
+  </g>
+</svg>

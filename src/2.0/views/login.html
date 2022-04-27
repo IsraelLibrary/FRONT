@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/site/main.css" />
+    <script src="/js/jQuery-3.6.0.js"></script>
+  </head>
+  <body>
+    <div class="container unified_container login-modal" role="presentation">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <!--       <img
+                class="companyLogo"
+                data-tenant-branding-logo="true"
+                src="https://nliauthb2c.b2clogin.com/static/tenant/templates/images/logo.svg"
+                alt="Company Logo"
+              /> -->
+              <div
+                id="api"
+                data-name="Unified"
+                role="main"
+                class="main-container"
+              >
+                <div class="heading">
+                  <h1 role="heading">Sign in</h1>
+                </div>
+                <form
+                  id="localAccountForm"
+                  action="JavaScript:void(0);"
+                  class="localAccount"
+                  aria-label="Sign in with your email address"
+                >
+                  <div class="intro">
+                    <h2 aria-level="1">Sign in with your email address</h2>
+                  </div>
+                  <div
+                    class="error pageLevel"
+                    aria-hidden="true"
+                    role="alert"
+                    style="display: none"
+                  >
+                    <p></p>
+                  </div>
+                  <div class="entry">
+                    <div class="entry-item">
+                      <div
+                        class="error itemLevel"
+                        aria-hidden="false"
+                        role="alert"
+                        style="display: block"
+                      >
+                        <p>Please enter your Email Address</p>
+                      </div>
+                      <input
+                        type="email"
+                        id="email"
+                        name="Email Address"
+                        title="Please enter a valid Email Address"
+                        pattern="^[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$"
+                        autofocus=""
+                        placeholder="Email Address"
+                        aria-label="Email Address"
+                        class="highlightError"
+                      />
+                    </div>
+
+                    <div class="entry-item">
+                      <div class="password-label"></div>
+                      <div
+                        class="error itemLevel"
+                        aria-hidden="false"
+                        style="display: block"
+                      >
+                        <p role="alert">Please enter your password</p>
+                      </div>
+                      <input
+                        type="password"
+                        id="password"
+                        name="Password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        autocomplete="current-password"
+                        aria-required="true"
+                        class="highlightError"
+                      />
+                      <div class="forgot-password center-height">
+                        <a
+                          id="forgotPassword"
+                          href="/nliauthb2c.onmicrosoft.com/B2C_1_signupsignin1/api/CombinedSigninAndSignup/forgotPassword?csrf_token=ZnFvL0piQUoyYWdHRU1pUUNnbUlPUVlFRk82TmFDUlZXWURob3hUK3BQTkNqV0FnY3kraEhtZldIZWdMNDdSeHFxb1ZGby9QWFRVUktGamRaVjZGdUE9PTsyMDIyLTAzLTI4VDEwOjEyOjQ3LjkyODU4NzhaOzVoUkRxb1hDNWJWZUUvRXJiSXQxZFE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJhODBiMmUwNi0wOGM0LTQ0YjktODgxYi0xZjk3NzVmYTc1NjMifQ&amp;p=B2C_1_signupsignin1"
+                          >Forgot your password?</a
+                        >
+                      </div>
+                    </div>
+                    <div class="working"></div>
+
+                    <div class="buttons">
+                      <button id="next" type="submit" form="localAccountForm">
+                        Sign in
+                      </button>
+                    </div>
+                  </div>
+                  <div class="divider">
+                    <h2>OR</h2>
+                  </div>
+                  <div class="create">
+                    <p>
+                      Don't have an account?<a
+                        id="createAccount"
+                        href="/nliauthb2c.onmicrosoft.com/B2C_1_signupsignin1/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=ZnFvL0piQUoyYWdHRU1pUUNnbUlPUVlFRk82TmFDUlZXWURob3hUK3BQTkNqV0FnY3kraEhtZldIZWdMNDdSeHFxb1ZGby9QWFRVUktGamRaVjZGdUE9PTsyMDIyLTAzLTI4VDEwOjEyOjQ3LjkyODU4NzhaOzVoUkRxb1hDNWJWZUUvRXJiSXQxZFE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJhODBiMmUwNi0wOGM0LTQ0YjktODgxYi0xZjk3NzVmYTc1NjMifQ&amp;p=B2C_1_signupsignin1"
+                        >Sign up now</a
+                      >
+                    </p>
+                  </div>
+                </form>
+                <div class="divider">
+                  <h2>OR</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
